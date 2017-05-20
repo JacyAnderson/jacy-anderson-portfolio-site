@@ -339,9 +339,9 @@ hr{
 	min-height:860px;
 	margin-bottom:-64px;
 	/*background: url('../images/header-bg.png') no-repeat;*/
-	background: url('../images/tiger.jpg') no-repeat;
+	background: url('../images/tiger.jpg') no-repeat 52% 100%;
 	background-attachment: fixed;
-	background-size: 100%;
+	/*background-size: 100%;*/
 	background-size: cover;
 	overflow: hidden;
 }
@@ -350,7 +350,8 @@ hr{
 	position: fixed;
 	width:100%;
 	height:100%;
-	min-height:860px;
+	min-height: 100%;
+	/*min-height:860px;*/
 	z-index: 2;
 }
 
@@ -822,10 +823,8 @@ hr{
 }
 
 .project-image {
-	width: 100%;
-	height: 100%;	
-	/*height: 26vh;*/
-	/*border: 1px solid black;*/
+	max-width: 100%;
+	height: auto;	
 }
 
 .hover-title{
@@ -904,7 +903,7 @@ hr{
 
 #project-viewer{
 	background: url('../images/header-bg.png') no-repeat;
-	/*background: url('../images/tiger.png') no-repeat;*/
+	/*background: url('../images/tiger.jpg') no-repeat;*/
 	background-attachment: fixed;
 	background-size: 100%;
 	background-size: cover;
@@ -1993,4 +1992,6 @@ hr{
 	}
 	
 }
+
+
 
