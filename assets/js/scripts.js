@@ -242,7 +242,7 @@ $(document).ready(function(){
 	  "showInteraction": false
 	};
 	
-	twitterFetcher.fetch(configTweets);
+	// twitterFetcher.fetch(configTweets);
 
 	function handleTweets(tweets){
 	

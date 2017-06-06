@@ -274,7 +274,7 @@ hr{
 
 .navbar h3 {
 	color: white;
-	margin-top: 10px;
+	margin-top: 6px;
 }
 
 #main-nav.scrolled .navbar-brand:after{
@@ -285,7 +285,7 @@ hr{
 	margin-top:-5px;
 	font-family: fontAwesome;
 	content:"\f062";
-	color:#d9e4eC !important;
+	color:#00cccb !important;
 	opacity: 0;
 	-webkit-transform: translateY(10px);
 	transform: translateY(10px);
@@ -575,56 +575,7 @@ polygon, path, ellipse{
 		stroke-dashoffset: 0;
 	}
 }
-/* Hover Animation */
-/**/
-.layer:hover + svg #right-side polygon:nth-of-type(5n+1),
-.layer:hover + svg #right-side path:nth-of-type(5n+1)
-{
-	-webkit-transform: translate(200%, -600%) scale(1.5) rotate(100deg) translateZ(0);
-	        transform: translate(200%, -600%) scale(1.5) rotate(100deg) translateZ(0);
-	opacity: .3;
-}
-/**/
-.layer:hover + svg #right-side polygon:nth-of-type(5n+2),
-.layer:hover + svg #right-side path:nth-of-type(5n+2)
-{
-	-webkit-transform: translate(800%, -600%) scale(.5) rotate(100deg) translateZ(0);
-	        transform: translate(800%, -600%) scale(.5) rotate(100deg) translateZ(0);
-	opacity: .3;
-  	fill-opacity: 0;
-  	stroke-width: .5px;
-  	stroke: #FFF;
-  	stroke-dashoffset: 0;
-}
-/**/
-.layer:hover + svg #right-side polygon:nth-of-type(5n+3),
-.layer:hover + svg #right-side path:nth-of-type(5n+3)
-{
-	-webkit-transform: translate(1000%, 0) scale(1.5) rotate(100deg) translateZ(0);
-	        transform: translate(1000%, 0) scale(1.5) rotate(100deg) translateZ(0);
-	opacity: .3;
-}
-/**/
-.layer:hover + svg #right-side polygon:nth-of-type(5n+4),
-.layer:hover + svg #right-side path:nth-of-type(5n+4)
-{
-	-webkit-transform: translate(1000%, 600%) scale(1) rotate(100deg) translateZ(0);
-	        transform: translate(1000%, 600%) scale(1) rotate(100deg) translateZ(0);
-	opacity: .3;
-  	fill-opacity: 0;
-  	stroke-width: .5px;
-  	stroke: #FFF;
-  	stroke-dashoffset: 0;
-}
-/**/
-.layer:hover + svg #right-side polygon:nth-of-type(5n+5),
-.layer:hover + svg #right-side path:nth-of-type(5n+5),
-.layer:hover + svg #right-side ellipse
-{
-	-webkit-transform: translate(0, 1000%) scale(.5) rotate(100deg) translateZ(0);
-	        transform: translate(0, 1000%) scale(.5) rotate(100deg) translateZ(0);
-	opacity: .3;
-}
+
 
 /* Animate Stroke  */
 svg #left-side polygon:nth-of-type(n+1),
@@ -721,9 +672,13 @@ svg #left-side ellipse
 	min-height:860px;
 	margin-bottom:-64px;
 	/*background: url('../images/header-bg.png') no-repeat;*/
-	background: url('../images/tiger.jpg') no-repeat 52% 100%;
-	background-attachment: fixed;
+	background: url('../images/tiger.jpg') no-repeat center center fixed;
+	/*background-attachment: fixed;*/
 	/*background-size: 100%;*/
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	background-size: cover;
 	overflow: hidden;
 }
@@ -1168,16 +1123,9 @@ h2.d3:first-letter {
 	
 }
 
-.project-item .project-image{
-	height: 100% !important;
-	width: 100% !important;
-	max-height: 100%;
-	max-width:100%;
-}
 
-.project-item {
-	height: 211.86px;
-	width:283px;	
+.project-image {
+	height: auto;
 }
 
 #projects-container .project-item{
@@ -1219,6 +1167,7 @@ h2.d3:first-letter {
 .project-image {
 	max-width: 100%;
 	height: auto;	
+	padding: 6px;
 }
 
 .hover-title{
@@ -1296,8 +1245,7 @@ h2.d3:first-letter {
 -----------------------*/
 
 #project-viewer{
-	background: url('../images/header-bg.png') no-repeat;
-	/*background: url('../images/tiger.jpg') no-repeat;*/
+	background: url('../images/project-viewer-bg.png') no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
 	background-size: cover;
@@ -1805,6 +1753,14 @@ h2.d3:first-letter {
 	background: #fff;
 }
 
+#main-footer a h2 {
+	font-size: 22px;	
+	position: relative;
+	text-transform: none;	
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
 
 #main-footer a,
 #main-footer a:hover,
@@ -2042,6 +1998,12 @@ h2.d3:first-letter {
 ---- Media Queries  ----
 ------------------------*/
 
+@media (min-width:1500px) and (max-width: 1620px) {
+	.navbar-brand {
+		margin-left: 100px !important;
+	}
+}
+
 @media (min-width:1500px){
 	.container{
 		width:1500px;
@@ -2080,10 +2042,19 @@ h2.d3:first-letter {
 	}
 }
 
-@media (max-width:1199px){
+@media (min-width: 1300px) {
+	.navbar-brand	h3 {
+ 		padding-left: 14px !important;
+	}
+}
+
+@media (max-width: 1300px) {
 	svg {
 		visibility: hidden;
 	}	
+}
+
+@media (max-width:1199px){
 	.push-down{
 		margin-top:60px;
 	}
@@ -2113,6 +2084,10 @@ h2.d3:first-letter {
 	.skills .plus-symbol:after,
 	.skills .equal-symbol:after{
 		right:-32px;
+	}
+
+	.toHide {
+		visibility: hidden;
 	}
 }
 
@@ -2247,6 +2222,11 @@ h2.d3:first-letter {
 	
 	.navbar > .container .navbar-brand{
 		padding: 5px 0 5px 15px;
+	}
+
+	.navbar h3 {
+		color:#39444C;
+		margin-left: 12px;
 	}
 	
 	#main-nav .navbar-brand:after{
@@ -2418,6 +2398,16 @@ h2.d3:first-letter {
 		margin:0 auto 15px;
 	}
 	
+}
+
+@media (max-width: 320px) {
+	#home {
+		background: url('../images/mountainjacy.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	}
 }
 
 
