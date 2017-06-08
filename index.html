@@ -1195,18 +1195,20 @@
 
 						<!--=== Contact Form ===-->
 
-						<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left" action="contact.php" method="post" novalidate>
-							
+						<!-- <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left" action="contact.php" method="post" novalidate> -->
+
+						<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left" action="https://formspree.io/jacyjamesanderson@gmail.com" method="POST" novalidate>
+							<!-- <input type="text" name="_gotcha" style="display: none">  -->
 							<div class="form-group">
 								<div class="controls">
-									<input id="contact-name" name="contactName" class="form-control requiredField" type="text" data-error-empty="is required">
+									<input id="contact-name" name="name" class="form-control requiredField" type="text" data-error-empty="is required">
 									<label class="control-label" for="contact-name">Name</label>
 								</div>
 							</div><!-- End name input -->
 							
 							<div class="form-group">
 								<div class="controls">
-									<input id="contact-mail" name="email" class="form-control requiredField" type="email" data-error-empty="is required" data-error-invalid="is invalid">
+									<input id="contact-mail" name="_replyto" class="form-control requiredField" type="email" data-error-empty="is required" data-error-invalid="is invalid">
 									<label class="control-label" for="contact-mail">Email</label>
 								</div>
 							</div><!-- End email input -->
@@ -1219,7 +1221,7 @@
 							</div><!-- End textarea -->
 							
 							<button name="submit" type="submit" class="btn" data-error-message="Please fill the required fields" data-sending-message="Sending Message" data-ok-message="Your Message has been sent!">Send It</button>
-							<input type="hidden" name="submitted" id="submitted" value="true" />
+							<input type="hidden" name="submitted" id="submitted" value="Send" />
 							
 						</form><!-- End contact-form -->
 						

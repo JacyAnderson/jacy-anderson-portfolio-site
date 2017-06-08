@@ -53,7 +53,7 @@ if(isset($_POST['submitted'])) {
 		$respondBody = "Your message to $siteTitle has been delivered! \n\nWe will answer back as soon as possible.";
 		$respondHeaders = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $emailTo;
 		
-		// mail($email, $respondSubject, $respondBody, $respondHeaders);
+		mail($email, $respondSubject, $respondBody, $respondHeaders);
 		
         // set our boolean completion value to TRUE
 		$emailSent = true;

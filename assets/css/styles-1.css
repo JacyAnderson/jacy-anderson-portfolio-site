@@ -669,18 +669,29 @@ svg #left-side ellipse
 #home{
 	position: relative;
 	height:100%;
-	min-height:860px;
-	margin-bottom:-64px;
-	/*background: url('../images/header-bg.png') no-repeat;*/
+	/*min-height:860px;*/
+	/*margin-bottom:-64px;*/
 	background: url('../images/tiger.jpg') no-repeat center center fixed;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-size: cover;
+	overflow: hidden;
+
+
+	/*position: relative;
+	height:100%;
+	min-height:860px;
+	margin-bottom:-64px;*/
+	/*background: url('../images/header-bg.png') no-repeat;*/
+	/*background: url('../images/tiger.jpg') no-repeat center center fixed;*/
 	/*background-attachment: fixed;*/
 	/*background-size: 100%;*/
-	-webkit-background-size: cover;
+	/*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 	background-size: cover;
-	overflow: hidden;
+	overflow: hidden;*/
 }
 
 #home .container{
@@ -1976,7 +1987,7 @@ h2.d3:first-letter {
 /* Front End Brands */
 .devicon-react-original {
 		color:#00d8ff;
-	}
+}
 
 .devicon-sass-original {
 	color:#c69;
@@ -2400,15 +2411,20 @@ h2.d3:first-letter {
 	
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
 	#home {
-		background: url('../images/mountainjacy.jpg') no-repeat center center fixed;
-		-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+		background: url('../images/mountainjacy.jpg') !important;
+		background-repeat: no-repeat !important; 
+    background-position: left center !important;
+    background-attachment: fixed !important;       
+    webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
 	}
 }
+
 
 
 
