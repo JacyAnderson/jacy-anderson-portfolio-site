@@ -1198,7 +1198,7 @@
 						<!-- <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left" action="contact.php" method="post" novalidate> -->
 
 						<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left" action="https://formspree.io/jacyjamesanderson@gmail.com" method="POST" novalidate>
-							<!-- <input type="text" name="_gotcha" style="display: none">  -->
+							<input type="text" name="_gotcha" style="display: none"> 
 							<div class="form-group">
 								<div class="controls">
 									<input id="contact-name" name="name" class="form-control requiredField" type="text" data-error-empty="is required">
@@ -1221,6 +1221,7 @@
 							</div><!-- End textarea -->
 							
 							<button name="submit" type="submit" class="btn" data-error-message="Please fill the required fields" data-sending-message="Sending Message" data-ok-message="Your Message has been sent!">Send It</button>
+							<input type="hidden" name="_subject" value="Website contact" />
 							<input type="hidden" name="submitted" id="submitted" value="Send" />
 							
 						</form><!-- End contact-form -->

@@ -62,12 +62,15 @@ $(document).ready(function() {
 			$('#contact-form').append('<p class="contact-form-message"><i class="fa fa-spinner fa-pulse"></i>'+sendingMessage+'</p>');
 			
 			var formInput = $(this).serialize();
-			$.post($(this).attr('action'),formInput, function(data){
+			$('#contact-form').append('<p class="contact-form-message"><i class="fa fa-spinner fa-pulse"></i>'+sendingMessage+'</p>');
 				$('#contact-form .contact-form-message').remove();
 				$('#contact-form').append('<p class="contact-form-message">'+okMessage+'</p>');
 				$('#contact-form').removeClass('clicked');
 				$('#contact-form')[0].reset();
 				$('#contact-form .form-control').removeClass('input-filled');
+			$.post($(this).attr('action'),formInput, function(data){
+			// 	console.log("in post");
+			
 			});
 			
 		}

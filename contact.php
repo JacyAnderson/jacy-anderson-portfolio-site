@@ -41,22 +41,22 @@ if(isset($_POST['submitted'])) {
 	// upon no failure errors let's email now!
 	if(!isset($hasError)) {
 		
-		$subject = 'New message to '.$siteTitle.' from '.$name;
-		$sendCopy = trim($_POST['sendCopy']);
-		$body = "Name: $name \n\nEmail: $email \n\nMessage: $comments";
-		$headers = 'From: ' .' <'.$email.'>' . "\r\n" . 'Reply-To: ' . $email;
+		// $subject = 'New message to '.$siteTitle.' from '.$name;
+		// $sendCopy = trim($_POST['sendCopy']);
+		// $body = "Name: $name \n\nEmail: $email \n\nMessage: $comments";
+		// $headers = 'From: ' .' <'.$email.'>' . "\r\n" . 'Reply-To: ' . $email;
 
-		mail($emailTo, $subject, $body, $headers);
+		// mail($emailTo, $subject, $body, $headers);
 		
-        //Autorespond
-		$respondSubject = 'Thank you for contacting '.$siteTitle;
-		$respondBody = "Your message to $siteTitle has been delivered! \n\nWe will answer back as soon as possible.";
-		$respondHeaders = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $emailTo;
+  //       //Autorespond
+		// $respondSubject = 'Thank you for contacting '.$siteTitle;
+		// $respondBody = "Your message to $siteTitle has been delivered! \n\nWe will answer back as soon as possible.";
+		// $respondHeaders = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $emailTo;
 		
-		mail($email, $respondSubject, $respondBody, $respondHeaders);
+		// mail($email, $respondSubject, $respondBody, $respondHeaders);
 		
-        // set our boolean completion value to TRUE
-		$emailSent = true;
+  //       // set our boolean completion value to TRUE
+		// $emailSent = true;
 	}
 }
 ?>
