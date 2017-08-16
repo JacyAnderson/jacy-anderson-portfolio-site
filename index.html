@@ -14,13 +14,14 @@
 		Favicons
 		=============================================== -->
 		<link rel="shortcut icon" href="assets/images/favicon.ico">
-		<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" href="assets/images/favicon.ico">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon.ico">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon.ico">
 		
 		<!-- ==============================================
 		CSS
-		=============================================== -->    
+		=============================================== --> 
+		<!-- <link rel="stylesheet" type="text/css" href="assets/css/bundle.css">  --> 
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/flexslider.css">
 		<link rel="stylesheet" href="assets/css/font-awesome.css">
@@ -41,7 +42,7 @@
 			<script src="assets/js/libs/respond.min.js"></script>
 			<![endif]-->
 
-			<script type="text/javascript" src="assets/js/libs/modernizr.min.js"></script>
+			
 
 		</head>
 
@@ -531,7 +532,7 @@
 		<!-- ==============================================
 		HEADER
 		=============================================== -->
-		<header id="home">
+		<header id="home" class="img-responsive">
 
 			<div class="container">
 
@@ -572,7 +573,7 @@
 
 				<div class="container">
 					
-					<h1 class="section-title">Skills<!-- <span class="main-color">1</span> --></h1>
+					<h1 class="section-title">Specialties<!-- <span class="main-color">1</span> --></h1>
 				<!-- 	
 					<div class="text-center">
 						<div class="btn-group">
@@ -588,7 +589,7 @@
 						<div class="col-sm-4 service-item scrollimation fade-left">
 
 							<!-- <div class="service-icon "><i class="fa fa-html5"></i></div> -->
-							<div class="service-icon"><a href="https://facebook.github.io/react/"><i class="fa devicon-react-original" ></i></a></div>
+							<div class="service-icon"><a href="https://facebook.github.io/react/" target="_blank"><i class="fa devicon-react-original" ></i></a></div>
 							
 							<h3>React</h3>
 							
@@ -599,7 +600,7 @@
 
 						<div class="col-sm-4 service-item scrollimation fade-left">
 
-							<div class="service-icon "><a href="http://sass-lang.com/"><i class="fa devicon-sass-original"></i></a></div>
+							<div class="service-icon "><a href="http://sass-lang.com/" target="_blank"><i class="fa devicon-sass-original"></i></a></div>
 							
 							<h3>Sass</h3>
 							
@@ -620,11 +621,11 @@
 						
 					</div>
 					
-					<div class="row tab-pane" id="back-end">
+					<div class="row tab-pane active" id="back-end">
 
-						<div class="col-sm-4 service-item">
+						<div class="col-sm-4 service-item scrollimation fade-right">
 
-							<div class="service-icon"><a href="https://wordpress.com/"><i class="fa devicon-wordpress-plain"></i></a></div>
+							<div class="service-icon"><a href="https://wordpress.com/" target="_blank"><i class="fa devicon-wordpress-plain"></i></a></div>
 							
 							<h3>Wordpress</h3>
 							
@@ -633,9 +634,9 @@
 							
 						</div>
 
-						<div class="col-sm-4 service-item">
+						<div class="col-sm-4 service-item scrollimation fade-right">
 
-							<div class="service-icon"><a href="https://nodejs.org/en/"><i class="fa devicon-nodejs-plain colored"></i></a></div>
+							<div class="service-icon"><a href="https://nodejs.org/en/" target="_blank"><i class="fa devicon-nodejs-plain colored"></i></a></div>
 							
 							<h3>Node.js</h3>
 							
@@ -644,9 +645,9 @@
 							
 						</div>
 						
-						<div class="col-sm-4 service-item">
+						<div class="col-sm-4 service-item scrollimation fade-right">
 
-							<div class="service-icon"><a href="https://www.postgresql.org/"><i class="fa devicon-postgresql-plain colored"></i></a></div>
+							<div class="service-icon"><a href="https://www.postgresql.org/" target="_blank"	><i class="fa devicon-postgresql-plain colored"></i></a></div>
 							
 							<h3>PostgreSQL</h3>
 							
@@ -749,7 +750,7 @@
 						<div class="col-sm-10 col-sm-offset-1 text-center">
 
 							<figure class="hover-wrapper scrollimation fade-right">
-								<img class="img-responsive img-circle profile-img" src="assets/images/face.jpg" alt="Jacy Anderson">
+								<img class="img-responsive img-circle profile-img" src="assets/images/jacyheadshot.jpg" alt="Jacy Anderson">
 
 								
 								<div class="hover-text"><a href="https://www.linkedin.com/in/jacyanderson/"><i style="font-size: 50px; color: white;" class="fa fa-fw fa-linkedin-square"></i></a>
@@ -1172,7 +1173,7 @@
 
 						<div class="col-sm-6 col-md-5 scrollimation fade-right">
 
-							<p class="lead">I am available for freelance. <br/>Can't wait for the next exciting project! Could it be yours?</p>
+							<p class="lead">I am available for freelance and other endeavors.<br/>Can't wait for the next exciting project! Could it be yours?</p>
 
 							<p>
 								Jacy Anderson<br/>
@@ -1255,7 +1256,7 @@
 
 								<ul class="footer-nav">
 									<li><a class="scrollto" href="#home">Home</a></li>
-									<li><a class="scrollto" href="#services">Skills</a></li>
+									<li><a class="scrollto" href="#services">Specialties</a></li>
 									<li><a class="scrollto" href="#portfolio">Portfolio</a></li>
 									<li><a class="scrollto" href="#contact">Contact</a></li>
 								</ul>
@@ -1318,6 +1319,8 @@
 		<script src="assets/js/jquery.easing.1.3.min.js"></script>
 		<script src="assets/js/waypoints.min.js"></script>
 		<script src="assets/js/jquery.easypiechart.js"></script>
+
+		<script type="text/javascript" src="assets/js/libs/modernizr.min.js"></script>
 
 		<!-- You'll have to un-comment out the related code in scripts.js, line 245-->
 	<!-- 	<script src="assets/js/twitterFetcher_min.js"></script> -->
