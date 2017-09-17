@@ -981,7 +981,7 @@ h2.d3:first-letter {
 ---- Skills Styles ----
 -----------------------*/
 #skills{
-	background-image: url('../dist/images/bars-bg.png');
+	background-image: url('../images/bars-bg.png');
 	background-repeat: no-repeat;
 	background-position: bottom center;
 }
@@ -1037,7 +1037,7 @@ h2.d3:first-letter {
 #twitter-feeds{
 	padding:80px 0 100px;
 	color:#fff;
-	background-image: url(../dist/images/polygon.png);
+	background-image: url(../images/polygon.png);
 }
 
 #twitter-feeds h1{
@@ -1318,7 +1318,7 @@ h2.d3:first-letter {
 }
 
 #project-viewer-content .project-media.video-container{
-	background: url(../dist/images/video-loader.gif) center center no-repeat;
+	background: url(../images/video-loader.gif) center center no-repeat;
 	background-color: #000;
 }
 
@@ -2493,7 +2493,7 @@ html[xmlns] .slides {display: block;}
 and (min-device-width : 768px) 
 and (max-device-width : 1366px)  { 
 	#home {
-		background: url('../dist/images/tiger.jpg') !important;
+		background: url('../images/tiger.jpg') !important;
 		background-repeat: no-repeat !important; 
     background-position: right center !important;      
     webkit-background-size: cover !important;
@@ -2509,7 +2509,7 @@ and (min-device-width : 375px)
 and (max-device-width : 667px) 
 and (orientation : landscape) { 
 	#home {
-		background: url('../dist/images/tiger.jpg') !important;
+		background: url('../images/tiger.jpg') !important;
 		background-repeat: no-repeat !important; 
     background-position:center !important;      
     webkit-background-size: cover !important;
@@ -2523,7 +2523,7 @@ and (orientation : landscape) {
 /* iPhone 6 Portrait */
 @media screen and (max-width: 667px) { 
 	#home {
-		background: url('../dist/images/mountainjacy.jpg') !important;
+		background: url('../images/mountainjacy.jpg') !important;
 		background-repeat: no-repeat !important; 
     background-position: left center !important;      
     webkit-background-size: cover !important;
