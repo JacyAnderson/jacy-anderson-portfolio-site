@@ -1127,7 +1127,7 @@ h2.d3:first-letter {
 }
 
 #projects-container {
-	margin: 0 0 80px;
+	margin: 0;
 	background:#fff;
 	-webkit-transition: none;
 	transition: none;
@@ -1556,16 +1556,20 @@ h2.d3:first-letter {
 
 .client-logo{
 	margin:30px 0;
-	opacity: .5;
-	-webkit-transition: opacity .2s ease-out;
-	transition: opacity .2s ease-out;
+	opacity: .6;
+	-webkit-transition: transform .4s ease-out, opacity .4s ease-out;
+	transition: transform .4s ease-out, opacity .4s ease-out;
 }
 
 .client-logo:hover{
 	opacity: 1;
+	-moz-transform: translate(0px, -5px);
+    -ms-transform: translate(0px, -5px);
+    -o-transform: translate(0px, -5px);
+    -webkit-transform: translate(0px, -5px);
+    transform: translate(0px, -5px)
 }
-
-/*-----------------------
+ /*-----------------------
 ---- Contact Styles  ----
 -------------------------*/
 
@@ -2331,8 +2335,7 @@ h2.d3:first-letter {
 		font-size: 21px;
 	}
 	
-	.project-item{
-		max-width:360px;
+	.project-item {
 		margin: 2px auto !important;
 	}
 	
@@ -2364,9 +2367,8 @@ h2.d3:first-letter {
 	}
 
 	.client-logo{
-		width:100%;
-		max-width: 260px;
-		margin: 40px auto !important;
+		max-width: 360px;
+		margin: 40px auto;
 	}
 	
 	#testimonials .media-left,
@@ -2534,8 +2536,55 @@ and (orientation : landscape) {
 }
 
 
+@media (min-width: 1200px){
+	#projects-container {
+		margin: 0 0 60px;
+	}	
+}
 
+@media (min-width: 1200px) and (max-width: 1500px) {
+	.project-image {
+		height: 380px;
+	}
+}
 
+@media (min-width: 1500px) {
+	.project-image {
+		height: 450px;
+	}
+}
 
+@media (min-width: 768px) and (max-width:1200px) {
+	.client-logo {
+		margin: 60px auto;
+		max-width: 360px;
+	}
+}
+
+@media (min-width: 1000px) and (max-width:1200px) {
+	.project-image {
+		height: 300px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+	.project-image {
+		height: 260px;
+	}
+}
+
+@media (max-width:768px) {
+	.big-padding {
+		padding-bottom: 20px;
+	}
+
+	#projects-container {
+		margin: 0;
+	}
+
+	#site-nav a {
+		color: #777;
+	}
+}
 
 
